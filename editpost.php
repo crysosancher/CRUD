@@ -1,4 +1,7 @@
 <?php
+ob_start();
+?>
+<?php
 //Get values from the post Operation
 require_once 'db/conn.php';
 
@@ -18,6 +21,7 @@ require_once 'db/conn.php';
 		//redirect  to index.php
 		if ($result) {
 			header("Location: viewrecords.php");
+			ob_end_flush();
 		} else {
 			echo "error";
 		}
