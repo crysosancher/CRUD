@@ -10,7 +10,7 @@ $results= $crud->getAttendees();
     <tr>
       <th scope="col">#</th>
       <th scope="col">First Name</th>
-      <th scope="col">Last Name<?php echo $r['index_id'] ?></th>
+      <th scope="col">Last Name</th>
       <!-- <th scope="col">Date Of Birth</th>
       <th scope="col">Email Address</th>
       <th scope="col">Contact</th> -->
