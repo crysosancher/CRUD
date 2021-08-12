@@ -8,10 +8,10 @@ $pass = '';
 $charset = 'utf8mb4';
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 //remote
-// $host = 'localhost';
-// $db = 'id17382732_crud';
-// $user = 'id17382732_cryso';
-// $pass = '~N[Y2{U7MoxK$-y]';
+// $host = '';
+// $db = '';
+// $user = '';
+// $pass = '';
 // $charset = 'utf8mb4';
 // $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 try {
