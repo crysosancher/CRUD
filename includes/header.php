@@ -1,3 +1,7 @@
+<?php 
+//This includes the session files.This file contain the code which start/stop the session.
+include_once'includes/session.php'
+?>
 <!doctype html>
 <html lang="en">
 
@@ -29,8 +33,22 @@
               <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="viewrecords.php">View Attendees</a>
-            </li>
+              <a class="nav-link" style="margin-right:845px"href="viewrecords.php">View Attendees</a>
+            </li> <li class="nav-item">
+              <?php 
+              if(!isset($_SESSION['userid'])){
+              ?>
+              <a class="nav-link"href="login.php"aria-current="page">Login</a>
+              <?php } else{ ?>
+                <a class="nav-link"href="#"><span>Hello <?php echo $_SESSION['username'] ?>!</span></a>
+                
+                <a class="nav-link"href="logout.php"aria-current="page">Logout</a>
+                <?php } ?>
+
+            </li>   
+      <!-- <div class="mx-2">
+          <button type="button" class="btn btn-warning"action="login.php">LOGIN</button>
+      </form> -->
           </ul>
         </div>
       </div>

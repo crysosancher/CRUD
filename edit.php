@@ -1,6 +1,7 @@
 <?php $tittle = 'Edit';
 require_once 'includes/header.php';
 require_once 'db/conn.php';
+require_once 'includes/auth_check.php';
 $results=  $crud->getSpecialty();
 if(!isset($_GET['id'])){
 	echo"<h1 class='text-danger'>Please Check Details and try again</h1>";
