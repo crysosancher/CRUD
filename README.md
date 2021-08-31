@@ -12,6 +12,6 @@ upload this repo to your server
 mail me for it or raise an issue.
 
 # Tech Used:  
-LAMP Stack 
-#Hosted on :-
+LAMP Stack   
+# Hosted on :-
 http://crud.rf.gd
